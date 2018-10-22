@@ -1,0 +1,32 @@
+;SetupMgrTag
+[Unattended]
+    InstallFilesPath=C:\sysprep\i386
+    DriverSigningPolicy=Ignore
+    OemPnpDriversPath=Drivers\balloon\balloon.inf;Drivers\netkvm\netkvm.inf
+    ExtendOEMPartition=1
+    OemSkipEula=Yes
+    UpdateInstalledDrivers=Yes
+
+[GuiUnattended]
+    EncryptedAdminPassword=NO
+    OEMSkipRegional=1
+
+[UserData]
+    FullName=""
+    OrgName=""
+    ComputerName=*
+
+[LicenseFilePrintData]
+    AutoMode=PerSeat
+
+[SetupMgr]
+    DistFolder=C:\sysprep\i386
+    DistShare=windist
+
+[Identification]
+    JoinWorkgroup=WORKGROUP
+
+[Networking]
+    InstallDefaultComponents=Yes
+
+[sysprepcleanup]
